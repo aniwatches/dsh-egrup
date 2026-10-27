@@ -8,6 +8,7 @@
 - #77 补 rc.3 的 `append()`：`this.revised.clear()` 已成条件调用。
 - `stripHarnessPersona` 补 rc.3 的 checkout / URL context 文案，身份清洗效果与旧版一致。
 - rc.2 的旧 needle 全部保留，同一份插件仍可用于 0.2.0-rc.2 / 0.2.1-rc.2。
+- 本仓库（aniwatches/dsh-egrup）成为安装与更新源：`lib/update.js` 的 REPO/STABLE_REF 改为 `aniwatches/dsh-egrup` / `main`，`dsh.install` 与 README 安装命令同步改指 main 归档。插件界面里点「更新」拉的是本 fork，不会再把 rc.3 适配冲回上游 1.1.71。原上游 YuJunZhiXue/dsh-purge 的署名展示保留。
 
 ## English
 
@@ -17,6 +18,7 @@
 - #77 covers rc.3 `append()`: `this.revised.clear()` is now conditional.
 - `stripHarnessPersona` covers the rc.3 checkout / URL context wording, matching the old neutralization effect.
 - All rc.2 needles are kept, so the same build still works on 0.2.0-rc.2 / 0.2.1-rc.2.
+- This repository (aniwatches/dsh-egrup) is now the install and update source: `lib/update.js` REPO/STABLE_REF point to `aniwatches/dsh-egrup` / `main`, and `dsh.install` plus the README install commands use the main archive. "Update" in the plugin UI pulls this fork, so the rc.3 adaptation is no longer overwritten by upstream 1.1.71. Upstream attribution (YuJunZhiXue/dsh-purge) stays in place.
 
 # 1.1.71
 
