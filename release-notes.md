@@ -1,3 +1,23 @@
+# 1.1.72
+
+## 中文
+
+- 版本 **1.1.72**。跟进 dsh **0.2.1-rc.3**，`dshTarget` 改为 `0.2.1-rc.3`。
+- #40 补 rc.3 的 host 形态：瀑布后多出 `requiredContexts`，`contexts` 改按它过滤。注入顺序与落点不变（fold-complete first），`contexts` 保留 rc.3 的 required 语义。
+- #32 / #53 补 rc.3 的位置：Web 表面提示词从 `dsh-web-app` 搬进 `dsh-harness-dev-context`，段落改为 `interpolate:false` 且 URL 由 runtime context 供给；新增该文件键，并按新文案补 needle。
+- #77 补 rc.3 的 `append()`：`this.revised.clear()` 已成条件调用。
+- `stripHarnessPersona` 补 rc.3 的 checkout / URL context 文案，身份清洗效果与旧版一致。
+- rc.2 的旧 needle 全部保留，同一份插件仍可用于 0.2.0-rc.2 / 0.2.1-rc.2。
+
+## English
+
+- **1.1.72**. Follows dsh **0.2.1-rc.3**; `dshTarget` is now `0.2.1-rc.3`.
+- #40 covers the rc.3 host shape: a new `requiredContexts` line after the waterfall and `contexts` filtered by it. Injection order and placement are unchanged (fold-complete first); `contexts` keeps rc.3's required semantics.
+- #32 / #53 cover rc.3 placement: the web-surface prompt moved from `dsh-web-app` into `dsh-harness-dev-context`, rendered with `interpolate:false` and the URL supplied by runtime context. New file key plus needles for the new wording.
+- #77 covers rc.3 `append()`: `this.revised.clear()` is now conditional.
+- `stripHarnessPersona` covers the rc.3 checkout / URL context wording, matching the old neutralization effect.
+- All rc.2 needles are kept, so the same build still works on 0.2.0-rc.2 / 0.2.1-rc.2.
+
 # 1.1.71
 
 ## 中文
